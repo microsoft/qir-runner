@@ -993,6 +993,12 @@ pub extern "C" fn __quantum__qis__dumpmachine__body(location: *mut c_void) {
     });
 }
 
+/// QIR API for the barrier operation. This is a no-op in simulation.
+#[no_mangle]
+pub extern "C" fn __quantum__qis__barrier__body() {
+    // No-op
+}
+
 #[cfg(test)]
 mod tests {
     use std::{f64::consts::PI, ffi::c_void, ptr::null_mut};

@@ -346,6 +346,7 @@ fn bind_functions(module: &Module, execution_engine: &ExecutionEngine) -> Result
     bind!(__quantum__qis__arctan2__body, 2);
     bind!(__quantum__qis__assertmeasurementprobability__body, 6);
     bind!(__quantum__qis__assertmeasurementprobability__ctl, 6);
+    bind!(__quantum__qis__barrier__body, 0);
     bind!(__quantum__qis__ccx__body, 3);
     bind!(__quantum__qis__cnot__body, 2);
     bind!(__quantum__qis__cos__body, 1);
